@@ -15,7 +15,7 @@ function academy_post_types() {
       'all_items' => 'All Events',
       'singular_name' => 'Event'
     ),
-    'menu_icon' => 'dashions-calendar'
+    'menu_icon' => 'dashicons-calendar'
   ));
 
   // Program Post Type
@@ -32,7 +32,7 @@ function academy_post_types() {
       'all_items' => 'All Programs',
       'singular_name' => 'Program'
     ),
-    'menu_icon' => 'dashions-awards'
+    'menu_icon' => 'dashicons-awards'
   ));
 }
 
