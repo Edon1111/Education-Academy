@@ -103,7 +103,7 @@
     <div class="hero-slider__interior container">
       <div class="hero-slider__overlay">
         <h2 class="headline headline--medium t-center">Free Food</h2>
-        <p class="t-center">Fictional University offers lunch plans for those in need.</p>
+        <p class="t-center">Education Academy offers lunch plans for those in need.</p>
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
       </div>
     </div>
