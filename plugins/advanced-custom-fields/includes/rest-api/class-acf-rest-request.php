@@ -103,11 +103,7 @@ class ACF_Rest_Request {
 	 * Get the current REST route as determined by WordPress.
 	 */
 	private function set_current_route( $request ) {
-		if ( $request ) {
-			$this->current_route = $request->get_route();
-		} else {
-			$this->current_route = empty( $GLOBALS['wp']->query_vars['rest_route'] ) ? null : $GLOBALS['wp']->query_vars['rest_route'];
-		}
+		$this->current_route = $request->get_route();
 	}
 
 	/**
@@ -145,10 +141,6 @@ class ACF_Rest_Request {
 		$this->supported_routes[] = '/wp/v2/(?P<rest_base>users)';
 		$this->supported_routes[] = '/wp/v2/(?P<rest_base>users)/(?P<id>[\d]+)';
 		$this->supported_routes[] = '/wp/v2/(?P<rest_base>users)/me';
-
-		// Add comment routes.
-		$this->supported_routes[] = '/wp/v2/(?P<rest_base>comments)';
-		$this->supported_routes[] = '/wp/v2/(?P<rest_base>comments)/(?P<id>[\d]+)';
 	}
 
 	/**
@@ -191,8 +183,7 @@ class ACF_Rest_Request {
 		// check post types then check taxonomies if a matching post type cannot be found.
 		if ( $base === 'users' ) {
 			$this->object_type = $this->object_sub_type = 'user';
-		} elseif ( $base === 'comments' ) {
-			$this->object_type = $this->object_sub_type = 'comment';
+
 		} elseif ( $post_type = $this->get_post_type_by_rest_base( $base ) ) {
 			$this->object_type     = 'post';
 			$this->object_sub_type = $post_type->name;
