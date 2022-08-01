@@ -18,7 +18,7 @@
         <?php 
           $today = date('Ymd');
           $homepageEvents = new WP_Query(array(
-            'posts_per_page' => 1,
+            'posts_per_page' => 2,
             'post_type' => 'event',
             'meta_key' => 'event_date',
             'orderby' => 'meta_value_num',
@@ -81,29 +81,29 @@
   <div class="hero-slider">
     <div data-glide-el="track" class="glide__track">
     <div class="glide__slides">
-    <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bus.jpg'); ?>);">
+    <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/math-background_23-2148147194.jpeg'); ?>);">
     <div class="hero-slider__interior container">
       <div class="hero-slider__overlay">
-        <h2 class="headline headline--medium t-center">Free Transportation</h2>
-        <p class="t-center">All students have free unlimited bus fare.</p>
+        <h2 class="headline headline--medium t-center">Trusted content</h2>
+        <p class="t-center">Build a deep, solid understanding in math, science, and more.</p>
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
       </div>
     </div>
   </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/apples.jpg'); ?>);">
+  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/guarnteedemplymenet.8676f19.png'); ?>);">
     <div class="hero-slider__interior container">
       <div class="hero-slider__overlay">
-        <h2 class="headline headline--medium t-center">An Apple a Day</h2>
-        <p class="t-center">Our dentistry program recommends eating apples.</p>
+        <h2 class="headline headline--medium t-center">Guaranteed Employment</h2>
+        <p class="t-center">After finishing the program successfully, there is guaranteed employment</p>
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
       </div>
     </div>
   </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bread.jpg'); ?>);">
+  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/Blog_online_ed.jpg'); ?>);">
     <div class="hero-slider__interior container">
       <div class="hero-slider__overlay">
-        <h2 class="headline headline--medium t-center">Free Food</h2>
-        <p class="t-center">Education Academy offers lunch plans for those in need.</p>
+        <h2 class="headline headline--medium t-center">Free Training</h2>
+        <p class="t-center">Education Academy offers free training for those in need.</p>
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
       </div>
     </div>
